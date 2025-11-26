@@ -1,0 +1,11 @@
+// Minimal test app to verify React is working
+export default function TestApp() {
+  return (
+    <div style={{ padding: '20px', fontSize: '24px', color: 'green' }}>
+      <h1>✅ React is Working!</h1>
+      <p>If you see this, React is rendering correctly.</p>
+      <p>Time: {new Date().toLocaleTimeString()}</p>
+    </div>
+  )
+}
+
