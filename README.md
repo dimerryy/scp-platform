@@ -61,6 +61,12 @@ Then:
 - Android Emulator: `http://10.0.2.2:8000`
 - Physical Device: `http://<YOUR-LAN-IP>:8000`
 
+## Mobile App (For Web)
+
+```bash
+docker compose up mobile
+```
+
 ## Troubleshooting
 
 ```bash
