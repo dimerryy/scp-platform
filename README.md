@@ -10,28 +10,48 @@ A B2B platform for suppliers (food producers/distributors) and institutional con
 
 ### Start All Services (Database, Backend, Web)
 
-docker compose up --buildAccess:
+```bash
+docker compose up --build
+```
+
+**Access:**
 - **Web**: http://localhost:5173
 - **Backend API**: http://localhost:8000/docs
 - **Mobile DevTools**: http://localhost:19001
 
 ### Stop Services
-h
-docker compose down### Start Specific Services
 
+```bash
+docker compose down
+```
+
+### Start Specific Services
+
+```bash
 # Database + Backend + Web
 docker compose up db backend web
 
 # Only Database
-docker compose up db### View Logs
+docker compose up db
+```
 
-docker compose logs -f## Mobile App (For Simulators)
+### View Logs
+
+```bash
+docker compose logs -f
+```
+
+## Mobile App (For Simulators)
 
 For iOS/Android simulators, run mobile locally:
 
+```bash
 cd mobile
 npm install
-npm startThen:
+npm start
+```
+
+Then:
 - Press `i` for iOS Simulator
 - Press `a` for Android Emulator
 - Scan QR code with Expo Go on physical device
@@ -43,6 +63,7 @@ npm startThen:
 
 ## Troubleshooting
 
+```bash
 # Rebuild everything
 docker compose up --build
 
@@ -52,4 +73,4 @@ docker compose up --build
 
 # Check container status
 docker compose ps
-
+```
